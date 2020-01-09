@@ -1,0 +1,77 @@
+body,a,ul,li,input,h2,p,h3,h4,h5{
+    margin:0;padding:0;list-style:none;
+    text-decoration:none;outline:0;border:0;}
+a:hover{text-decoration:none;}
+/*µ×²¿ÐÅÏ¢*/
+.footer{
+    width:100%;padding:50px 0px 20px;
+    background:#333;color:#ccc;}
+.footer::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.footer_top{width:1200px;margin:0 auto;}
+.footer_top>ul{
+    display:flex;font-size:16px;
+    justify-content:space-around;}
+.footer_top>ul img{float:left;}
+.footer_top>ul h4{float:left;}
+.footer_top>ul p{float:left;}
+.footer_top>ul img{vertical-align:baseline;margin-right:10px;}
+.footer_top>ul h4{
+    color:#fff;text-align:left;
+    margin-bottom:13px;font-size:20px;}
+.footer_top>ul p{color:#999;text-align:left;}
+.footer_mid{width:1200px;margin:0 auto;padding-top:50px;}
+.footer_mid::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.mid_list>ul{width:620px;height:120px;float:left;}
+.mid_list>ul>li{
+    width:25%;height:20px;
+    float:left;margin-bottom:30px;}
+.mid_list>ul>li>a{float:left;font-size:16px;color:#999;}
+#list_a1,#list_a2,#list_a3,#list_a4{color:#ccc; font-weight:700;}
+.list_li2{margin-bottom:0;}
+.list_li2>a{color:#ccc;}
+.mid_tel{width:172px;float:left;}
+.phone,.online{float:left;}
+.phone{padding-bottom:30px;}
+.mid_tel{color:#999;font-size:16px;font-weight:700;}
+.phone>a{font-size:14px;color:#999;font-weight:700;}
+.mid_tel_top>span{
+    display:inline-block;
+    width:42px;height:42px;
+    background:url(../image/footer-tel-icon.png);
+    float:left;margin-right:15px;}
+.mid_tel_bot>span{
+    display:inline-block;
+    width:42px;height:42px;
+    background:url(../image/footer-ask-icon.png);
+    float:left;margin-right:15px;}
+.mid_right{float:right;width:300px;padding-right:30px;}
+.code{display:flex;justify-content:space-around;}
+.code p{font-size:14px;color:#999;}
+.code>div{align-self:center;}
+.code>div>img{margin-bottom:10px;padding-left:5px;}
+.footer_bot{width:100%;}
+.bot_list{
+    width:800px;padding:50px 0 20px;
+    margin:0 auto;display:flex;
+    flex-flow:row wrap;}
+.bot_list a:hover{color:#999;}
+.bot_list ul{float:left;}
+.bot_list>h3{
+    float:left;color:#999;
+    font-size:16px;padding-top:4px;}
+.bot_list>ul>li{float:left;padding:0 13px;}
+.bot_list>ul>li>a{font-size: 14px;color:#999;line-height:30px;}
+.bot_list>span>a{text-align:left;font-size:16px;color:#999;}
+#metenpos{
+    width:485px;margin:10px auto;
+    font-size:16px;color:#999;font-weight:700;}
+#metenpos>.span2>a{text-align:left;}
+#metenpos>p{margin:10px 0px;}

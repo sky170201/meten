@@ -1,0 +1,30 @@
+.privacy_part1{
+    background: #fff;
+}
+.privacy_part1_content{
+    width:1200px;
+    margin:auto;
+    padding:60px 0 60px;
+    letter-spacing:2px;
+}
+.privacy_part1_content>h2{
+    font-size: 24px;
+    font-weight: 400;
+    color:#333333;
+    font-style: normal;
+}
+.privacy_part1_content>h2>span{
+    font-size:16px;
+}
+.privacy_part1_content>h3{
+    font-size: 16px;
+    font-weight: 400;
+    color:#333333;
+    font-style: normal;
+    padding-top:40px;
+    padding-bottom:15px;
+}
+.privacy_part1_content>p{
+    font-size: 16px;
+    text-indent:35px;
+}

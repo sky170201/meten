@@ -1,0 +1,228 @@
+.carousel-item{
+    position:relative;
+}
+.carousel-item>div{
+    width:466px;
+    background:#fff;
+    opacity: .75;
+    padding:38px 29px 25px;
+    line-height: 36px;
+    font-size: 18px;
+    position:absolute;
+    top:110px;
+    left:200px;
+}
+.carousel-indicators li{
+    width:10px;
+    height:10px;
+    margin:0 5px;
+    border-radius:50%;
+    background:#fff;
+    margin-bottom:30px;
+}
+.carousel-indicators li.active{
+    background:#86c138;
+}
+.school_part1{
+    background:#fff;
+    font-size:16px;
+    color:#333;
+    padding:15px 0 100px;
+}
+.school_part1::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.sch_p1_content{
+    width:1200px;
+    margin:auto;
+}
+.sch_p1_content>div:first-child{
+    float:left;
+    font-weight: bold;
+}
+.sch_p1_content>ul{
+    float:left;
+    margin-left:20px;
+}
+.sch_p1_content>ul>li{
+    float:left;
+    margin-bottom: 20px;
+}
+.sch_p1_content>ul>li+li{
+    margin-left:15px;
+}
+.sch_p1_content>ul>li>a{
+    color:#333;
+}
+.sch_p1_content>ul>li:hover a{
+    color:#86c138;
+    cursor: pointer;
+    text-decoration:underline;
+}
+.sch_p1_map>img{
+    float:left;
+    width:512px;
+    height:392px;
+}
+.p1_map_right{
+    float:left;
+    width:580px;
+    margin-left:60px;
+    position:relative;
+}
+.p1_map_right>h3{
+    font-size:24px;
+    color:#333;
+    margin-bottom:10px;
+}
+.p1_map_right>p{
+    padding:12px 0;
+}
+.p1_map_right>p>b{
+    color:#000;
+    font-style:normal;
+    font-weight: 400;
+}
+.p1_map_right>p>span{
+    color:#666;
+}
+.p1_map_right>p>a{
+    float:right;
+    color:#86c138;
+    text-decoration: underline;
+}
+.ewm{
+    width:173px;
+    height:193px;
+    top:85px;
+    right:0px;
+    position:absolute;
+    opacity: 0;
+    z-index: 1;
+    background:url(../image/school/icon-new11.png)
+}
+/*.p1_map_right>p>a:hover .ewm{*/
+    /*opacity: 1;*/
+/*}*/
+.giftInfo{
+    height:80px;
+    background:#f0f0f0;
+    position:relative;
+}
+.giftInfo>div{
+    width:98px;
+    height:34px;
+    text-align: center;
+    color:#fff;
+    line-height: 24px;
+    background:url(../image/school/icon-new05.png) no-repeat;
+    margin-top:13px;
+    float:left;
+}
+.giftInfo>ul{
+    float:left;
+    width:480px;
+    margin-top:17px;
+    padding-left:15px;
+}
+.giftInfo>ul>li{
+    width:50%;
+    float:left;
+}
+.sch_p1_btn{
+    display: block;
+    width:240px;
+    line-height:40px;
+    text-align: center;
+    color:#fff;
+    background:#86c138;
+    font-size: 18px;
+    border-radius:20px;
+    cursor: pointer;
+    margin-top:20px;
+}
+.sch_p1_btn:hover{
+    color:#fff;
+    background:#76ab2f;
+}
+.school_part2{
+    width:100%;
+    height:550px;
+    padding:60px 0;
+    background:url(../image/school/bg.png) no-repeat;
+}
+.sch_p2_title{
+    text-align: center;
+}
+.sch_p2_title>div{
+    display:inline-block;
+    position:relative;
+}
+.sch_p2_title em{
+    position:absolute;
+    display: block;
+    width:180px;
+    height:2px;
+    background:#1bbbfe;
+    top:50%;
+}
+.sch_p2_title .em1{
+    left:0;
+}
+.sch_p2_title .em2{
+    right:0;
+}
+.sch_p2_title h2{
+    display: inline-block;
+    color:#1bbbfe;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.sch_p2_title h2>b{
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    padding:0 202px;
+}
+.sch_p2_title h2>b:last-child{
+    font-size: 24px;
+}
+.school_part2>ul{
+    width:1200px;
+    margin:auto;
+    margin-top:35px;
+    display: flex;
+    justify-content: space-between;
+}
+.school_part2>ul>li>img{
+    width:393px;
+}
+.school_part3{
+    background:#fff;
+    padding:60px 0;
+    text-align: center;
+}
+.school_part3>h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom:50px;
+    font-style: normal;
+}
+.school_part3>ul{
+    width:1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+.school_part3>ul>li>img{
+    margin-bottom:50px;
+}
+.school_part3>ul>li>p{
+    color:#333;
+    font-size:16px;
+}
