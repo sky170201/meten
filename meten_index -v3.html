@@ -296,11 +296,11 @@
 							</li>
 						</ul>
 					</div>
-					<div data-target="#demo" data-toggle="collapse" class="part1_tip">
+					<div class="part1_tip">
 						<em></em>
 						温馨小贴士：英语学习者四大难题 帮你解决 >
 					</div>
-					<div id="demo" class="collapse hid clearfix">
+					<div class="hid">
 						<em></em>
 						<div class="hid_list">
 							<div class="hid_list_d1 hid_list_d1_post">
@@ -331,6 +331,17 @@
 							<div class="hid_btn">免费预约体检 ></div>
 						</div>
 					</div>
+				<script>
+					var divOpen=document.querySelector("div.part1>div.part1_tip");
+					console.log(divOpen);
+					divOpen.onclick=function(){
+						if(this.id=="open"){
+							this.id="";
+						}else{
+							this.id="open";
+						}
+					}
+				</script>
 				</div>
 			<div class="part2">
 					<div class="part2_cont">
