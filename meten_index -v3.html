@@ -41,7 +41,9 @@
 					<div class="top_right">
 						<div class="info_left">全站导航</div>
 						<div class="info_right">
-							<span><a href="">注册</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a href="">登录</a></span>
+							<span><a class="ira1" href="">注册</a></span>
+							<em></em>
+							<span><a class="ira2" href="">登录</a></span>
 						</div>
 						<div class="info_tel">
 							<img src="image/new-hd-tel-icon.png" alt="">
@@ -56,6 +58,7 @@
 						<div class="left_logo">
 							<img src="image/logo_new.png" alt="">
 						</div>
+						<div class="header_line"></div>
 						<div class="header_content_left_right index_cit">
 							<div class="posi">
 								<img class="img1" src="image/pos-icon01.png" alt="">
@@ -79,7 +82,7 @@
 										<li>
 											<i>G</i><a href="">广州</a>
 										</li>
-										<li>
+										<li class="nav_hidlist_cit_li1">
 											<i>H</i><a href="">惠州</a><a href="">合肥</a><a href="">哈尔滨</a><a href="">杭州</a>
 										</li>
 										<li>
@@ -225,16 +228,24 @@
 						<div class="reg_btn_count"><span>759742</span>位用户已预约</div>
 						<div class="metentips">
 							<div class="tip_info">
-								<div class="checkBox">
-									<img src="image/chooseBtn01.png" alt="">
-								</div>
 								<span>
+									<em emcho class="chonclick"></em>
 									同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
+			<script>
+				var emcho=document.querySelector("[emcho]");
+				emcho.onclick=function(){
+					if(this.className==" bgchonclick chonclick"){
+						this.className="chonclick";
+					}else{
+						this.className=" bgchonclick chonclick";
+					}
+				}
+			</script>
 			<div class="part1">
 					<div class="part1_top">
 						<h2>英语课程 - 针对不同人群 提供个性课程</h2>
@@ -331,9 +342,10 @@
 							<div class="hid_btn">免费预约体检 ></div>
 						</div>
 					</div>
+				<!-- part1隐藏部分下拉-->
 				<script>
 					var divOpen=document.querySelector("div.part1>div.part1_tip");
-					console.log(divOpen);
+					<!-- console.log(divOpen);-->
 					divOpen.onclick=function(){
 						if(this.id=="open"){
 							this.id="";
@@ -359,38 +371,127 @@
 							<div class="select">
 								<h4>请选择预期达到的目标</h4>
 								<ul class="d-flex flex-wrap">
-									<li>个人储备</li>
-									<li>日常口语</li>
-									<li>商务交流</li>
-									<li>出国旅游</li>
-									<li>雅思托福</li>
-									<li>青少英语</li>
+									<li style="color:#86c138">
+										<em p2_emcho class="part2_em bgpart2_em"></em>
+										个人储备
+									</li>
+									<li>
+										<em p2_emcho class="part2_em"></em>
+										日常口语
+									</li>
+									<li>
+										<em p2_emcho class="part2_em"></em>
+										商务交流
+									</li>
+									<li>
+										<em p2_emcho class="part2_em"></em>
+										出国旅游
+									</li>
+									<li>
+										<em p2_emcho class="part2_em"></em>
+										雅思托福
+									</li>
+									<li>
+										<em p2_emcho class="part2_em"></em>
+										青少英语
+									</li>
 								</ul>
 								<h4>请选择意向的学习方式</h4>
-								<ul class="d-flex flex-wrap">
-									<li>1-4人小班</li>
-									<li>VIP一对一</li>
-									<li>在线学习</li>
+								<ul class="d-flex flex-wrap danx">
+									<li  style="color:#86c138">
+										<em p2_emcho2 class="part2_em bgpart2_em"></em>
+										1-4人小班
+									</li>
+									<li>
+										<em p2_emcho2 class="part2_em"></em>
+										VIP一对一
+									</li>
+									<li>
+										<em p2_emcho2 class="part2_em"></em>
+										在线学习
+									</li>
 								</ul>
 							</div>
+							<!-- part2 单选方框选择功能，选择一个，关闭另一个-->
+							<script>
+								var emchos2=document.querySelectorAll("[p2_emcho2]");
+								console.log(emchos2);
+								for(emcho of emchos2){
+									emcho.onclick=function(){
+										if(this.className=="part2_em bgpart2_em"){
+											this.className="part2_em";
+											this.parentNode.style.color="#212529";
+										}else{
+											var count=document.querySelector(
+													"ul.danx>li>em.bgpart2_em"
+											);
+											console.log(count);
+											if(count!==null){
+												count.className="part2_em";
+												count.parentNode.style.color="#212529";
+												this.className="part2_em bgpart2_em";
+												this.parentNode.style.color="#86c138";
+											}else{
+												this.className="part2_em bgpart2_em";
+												this.parentNode.style.color="#86c138";
+											}
+										}
+									}
+								}
+							</script>
+							<!-- part2 多选方框选择功能，最多两个-->
+							<script>
+								var emchos=document.querySelectorAll("[p2_emcho]");
+								console.log(emchos);
+								for(emcho of emchos){
+									emcho.onclick=function(){
+										if(this.className=="part2_em bgpart2_em"){
+											this.className="part2_em";
+											this.parentNode.style.color="#212529";
+										}else{
+											var count=document.getElementsByClassName("bgpart2_em");
+											console.log(count);
+											if(count.length<3){
+												this.className="part2_em bgpart2_em";
+												var li_color=this.parentNode;
+												console.log(li_color);
+												this.parentNode.style.color="#86c138";
+											}else{
+												alert("您最多可以选择两个")
+											}
+										}
+									}
+								}
+							</script>
 							<div class="assess">
 								<div class="clearfix">
 									<input type="tel" maxlength="11" class="ass_input" value="请输入手机号，评估学习费用" onfocus="if(value=='请输入手机号，评估学习费用'){value=''}" onblur="if(value==''){value='请输入手机号，评估学习费用'}">
 									<div class="ass_d1">免费评估</div>
 								</div>
 								<div class="ass_tip">
-									<span class="ass_box">
-										<img src="image/chooseBtn01.png" alt="">
-									</span>
+									<span class="ass_box"></span>
 									<span>
-										&nbsp;&nbsp;同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
+										同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
 									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
+			<!-- part2 免费评估同意方框-->
+			<script>
+				var assbtns=document.getElementsByClassName("ass_box");
+				console.log(assbtns);
+				for(var assbtn of assbtns){
+					assbtn.onclick=function(){
+						if(this.className=="ass_box ass_onclick"){
+							this.className="ass_box";
+						}else{
+							this.className="ass_box ass_onclick";
+						}
+					}
+				}
+			</script>
 			<div class="part3">
 					<div class="part3_tiltel">
 						<p class="p1">等级设置 - 欧洲CEFR标准 科学划分英语等级</p>
@@ -667,16 +768,28 @@
 							<div class="part8_btn">免费领取</div>
 						</div>
 						<div class="ass_tip">
-							<span class="ass_box">
-								<img src="image/chooseBtn01.png" alt="">
-							</span>
+							<span class="ass2_box"></span>
 							<span>
-								&nbsp;&nbsp;同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
+								同意<a href="" target="_blank">《美联用户隐私保护协议》</a>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- part8 免费领取同意方框-->
+			<script>
+				var assbtns=document.getElementsByClassName("ass2_box");
+				console.log(assbtns);
+				for(var assbtn of assbtns){
+					assbtn.onclick=function(){
+						if(this.className=="ass2_box ass_onclick"){
+							this.className="ass2_box";
+						}else{
+							this.className="ass2_box ass_onclick";
+						}
+					}
+				}
+			</script>
 			<div class="footer">
 				<div class="footer_top">
 					<ul>
